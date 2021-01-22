@@ -1,1 +1,1024 @@
 
+2021-01-22 08:32:15,479 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:541]
+2021-01-22 08:32:50,109 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:541]
+2021-01-22 08:33:48,595 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:541]
+2021-01-22 08:34:52,756 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:541]
+2021-01-22 09:36:05,406 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:546]
+2021-01-22 09:37:06,633 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:546]
+2021-01-22 09:38:14,733 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:546]
+2021-01-22 09:39:07,682 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:546]
+2021-01-22 10:03:39,094 INFO: errors [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py:573]
+2021-01-22 10:04:13,167 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 10:06:35,221 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 10:11:22,507 ERROR: Exception on /artists/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 476, in create_artist_form
+    form = ArtistForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 10:46:41,229 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 10:48:33,727 ERROR: Exception on /artists/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 476, in create_artist_form
+    "id": 1,
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 10:48:40,541 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 10:48:51,774 ERROR: Exception on /shows/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 541, in create_shows
+    }, {
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:06:20,319 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:06:32,790 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:06:35,876 ERROR: Exception on /artists/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 476, in create_artist_form
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:06:43,354 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:13:59,853 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:14:10,292 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:14:12,985 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:15:07,029 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    @app.route('/venues/create', methods=['GET'])
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:15:08,390 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    @app.route('/venues/create', methods=['GET'])
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:15:26,537 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    @app.route('/venues/create', methods=['GET'])
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:17:58,310 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    #  Create Venue
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:20:51,944 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:20:58,539 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:21:00,300 ERROR: Exception on /artists/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 476, in create_artist_form
+    # artist record with ID <artist_id> using the new attributes
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:21:42,177 ERROR: Exception on /artists/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 476, in create_artist_form
+    # artist record with ID <artist_id> using the new attributes
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:23:13,670 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:23:24,122 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:25:06,008 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:25:11,787 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:26:31,178 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:26:34,021 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    def create_venue_form():
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-01-22 11:39:10,236 ERROR: Exception on /venues/create [GET] [in C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\app.py", line 283, in create_venue_form
+    "name": "Guns N Petals",
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\cb000\Documents\Udacity\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
