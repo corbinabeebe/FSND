@@ -246,7 +246,8 @@ def create_venue_submission():
   # TODO: insert form data as a new Venue record in the db, instead
   # TODO: modify data to be the data object returned from db insertion
 	try:	
-		db.session.add(Venue(
+		# add data from form to venue object
+		venue = Venue(
 			name = request.form.get("name"),
 			city = request.form.get("city"),
 			state = request.form.get("state"),
@@ -257,15 +258,15 @@ def create_venue_submission():
 			facebook_link = request.form.get("facebook_link"),
 			website = request.form.get("website"),
 			seeking_talent = True if 'seeking_talent' in request.form else False,
-			seeking_description = request.form.get("seeking_description")))
+			seeking_description = request.form.get("seeking_description")
+		)
+		db.session.add(venue)
 		db.session.commit()
 		flash('Venue ' + request.form['name'] + ' was successfully listed!') # on successful db insert, flash success
-	except:
+	except Exception as e:
 		db.session.rollback()
+		# on unsuccessful db insert, flash an error instead.
 		flash('Venue ' + request.form['name'] + ' was not listed!')
-	# on unsuccessful db insert, flash an error instead.
-  # e.g., flash('An error occurred. Venue ' + data.name + ' could not be listed.')
-  # see: http://flask.pocoo.org/docs/1.0/patterns/flashing/
 	finally:
 		db.session.close()
 	return render_template('pages/home.html')
