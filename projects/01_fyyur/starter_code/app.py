@@ -243,32 +243,29 @@ def create_venue_form():
 
 @app.route('/venues/create', methods=['POST'])
 def create_venue_submission():
+	form = VenueForm(request.form, meta={'csrf':False})
   # TODO: insert form data as a new Venue record in the db, instead
   # TODO: modify data to be the data object returned from db insertion
-	try:	
-		# add data from form to venue object
-		venue = Venue(
-			name = request.form.get("name"),
-			city = request.form.get("city"),
-			state = request.form.get("state"),
-			address = request.form.get("address"),
-			phone = request.form.get("phone"),
-			image_link = request.form.get("image_link"),
-			genres = request.form.getlist("genres"),
-			facebook_link = request.form.get("facebook_link"),
-			website = request.form.get("website"),
-			seeking_talent = True if 'seeking_talent' in request.form else False,
-			seeking_description = request.form.get("seeking_description")
-		)
-		db.session.add(venue)
-		db.session.commit()
-		flash('Venue ' + request.form['name'] + ' was successfully listed!') # on successful db insert, flash success
-	except Exception as e:
-		db.session.rollback()
-		# on unsuccessful db insert, flash an error instead.
-		flash('Venue ' + request.form['name'] + ' was not listed!')
-	finally:
-		db.session.close()
+	if form.validate():
+		try:	
+			# add data from form to venue object
+			venue = Venue()
+			form.populate_obj(venue)
+			db.session.add(venue)
+			db.session.commit()
+			flash('Venue ' + request.form['name'] + ' was successfully listed!') # on successful db insert, flash success
+		except ValueError as e:
+			print(e)
+			# on unsuccessful db insert, flash an error instead.
+			flash('Venue ' + request.form['name'] + ' was not listed!')
+			db.session.rollback()
+		finally:
+			db.session.close()
+	else:
+		message = []
+		for field, err in form.errors.items():
+			message.append(field + '' + '|'.join(err))
+		flash("Errors" + str(message))
 	return render_template('pages/home.html')
 
 @app.route('/venues/<venue_id>', methods=['DELETE'])
