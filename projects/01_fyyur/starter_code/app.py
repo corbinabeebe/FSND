@@ -389,6 +389,9 @@ def create_artist_submission():
 			genres = request.form.getlist('genres'),
 			image_link = request.form.get('image_link'),
 			facebook_link = request.form.get('facebook_link'),
+			website = request.form.get('website'),
+			seeking_venue = True if 'seeking_venue' in request.form else False,
+			seeking_description = request.form.get('seeking_description')
 		)
 		db.session.add(artist)
 		db.session.commit()
@@ -468,21 +471,30 @@ def create_shows():
 @app.route('/shows/create', methods=['POST'])
 def create_show_submission():
 	# called to create new shows in the db, upon submitting new show listing form
-	try:
-		show = Show(
-			venue_id = request.form.get('venue_id'),
-			artist_id = request.form.get('artist_id'),
-			start_time = request.form.get('start_time')
-		)
-		db.session.add(show)
-		db.session.commit()
+	error = False
+	form = ShowForm()
+	if form.validate:
+		try:
+			show = Show(
+				venue_id = form['venue_id'].data,
+				artist_id = form['artist_id'].data,
+				start_time = form['start_time'].data
+			)
+			db.session.add(show)
+			db.session.commit()
+			
+		except Exception as e:
+			error = True
+			db.session.rollback()
+			
+		finally:
+			db.session.close()
+	if error:
+		flash('Show was not listed!')
+	else:
 		# on successful db insert, flash success
 		flash('Show was successfully listed!')
-	except Exception as e:
-		db.session.rollback()
-		flash('Show was not listed!')
-	finally:
-		db.session.close()
+	
 	return render_template('pages/home.html')
 
 @app.errorhandler(404)
