@@ -412,8 +412,6 @@ def create_artist_submission():
 @app.route('/shows')
 def shows():
   # displays list of shows at /shows
-  # TODO: replace with real venues data.
-  #       num_shows should be aggregated based on number of upcoming shows per venue.
 	shows = db.session.query(Show).join(Artist).join(Venue).all()
 
 	data = []
@@ -422,7 +420,7 @@ def shows():
 		data.append({
 			"venue_id": show.venue_id,
 			"artist_id": show.artist_id,
-			"start_time": format_datetime(str(show.start_time))
+			"start_time": str(show.start_time)
 		})
   # data=[{
   #   "venue_id": 1,
